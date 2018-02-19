@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './TeslaCounter.css';
+import TeslaNotice from "../TeslaNotice/TeslaNotice";
 
 const TeslaCounter = (props) => (
     <div className="tesla-counter">
@@ -101,8 +102,10 @@ TeslaCounter3.propTypes = {
     initValues: PropTypes.object
 }
 
-export {
-    TeslaCounter,
-    TeslaCounter2,
-    TeslaCounter3
-}
+export default TeslaCounter;
+
+// export {
+//     TeslaCounter,
+//     TeslaCounter2,
+//     TeslaCounter3
+// }

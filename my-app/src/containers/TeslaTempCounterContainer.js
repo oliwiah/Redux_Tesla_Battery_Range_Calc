@@ -21,6 +21,6 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-const TeslaTempCounterContainer = connect(mapStateToProps, mapDispatchToProps)(TeslaCounter)
+const TeslaTempCounterContainer = connect(mapStateToProps, mapDispatchToProps)(TeslaCounter);
 
 export default TeslaTempCounterContainer;
