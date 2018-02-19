@@ -20,8 +20,8 @@ const initialState = {
 function updateStats(state, newState) {
     return {
         ...state,
-        config:newState.config,
-        carstats:calculateStats(newState)
+        config: newState.config,
+        carstats: calculateStats(newState)
     }
 }
 function calculateStats(state) {
@@ -54,10 +54,10 @@ function appReducer(state = initialState, action) {
             const newState = {
                 ...state,
                 config: {
-                    climate:state.config.climate,
-                    speed:action.value + action.step,
-                    temperature:state.config.temperature,
-                    wheels:state.config.wheels
+                    climate: state.config.climate,
+                    speed: action.value + action.step,
+                    temperature: state.config.temperature,
+                    wheels: state.config.wheels
                 }
             };
             return updateStats(state, newState);
@@ -66,10 +66,10 @@ function appReducer(state = initialState, action) {
             const newState = {
                 ...state,
                 config: {
-                    climate:state.config.climate,
-                    speed:action.value - action.step,
-                    temperature:state.config.temperature,
-                    wheels:state.config.wheels
+                    climate: state.config.climate,
+                    speed: action.value - action.step,
+                    temperature: state.config.temperature,
+                    wheels: state.config.wheels
                 }
             };
             return updateStats(state, newState);
@@ -78,10 +78,10 @@ function appReducer(state = initialState, action) {
             const newState = {
                 ...state,
                 config: {
-                    climate:state.config.climate,
-                    speed:state.config.speed,
-                    temperature:action.value + action.step,
-                    wheels:state.config.wheels
+                    climate: state.config.climate,
+                    speed: state.config.speed,
+                    temperature: action.value + action.step,
+                    wheels: state.config.wheels
                 }
             };
             return updateStats(state, newState);
@@ -90,10 +90,10 @@ function appReducer(state = initialState, action) {
             const newState = {
                 ...state,
                 config: {
-                    climate:state.config.climate,
-                    speed:state.config.speed,
-                    temperature:action.value - action.step,
-                    wheels:state.config.wheels
+                    climate: state.config.climate,
+                    speed: state.config.speed,
+                    temperature: action.value - action.step,
+                    wheels: state.config.wheels
                 }
             };
             return updateStats(state, newState);
@@ -102,10 +102,10 @@ function appReducer(state = initialState, action) {
             const newState = {
                 ...state,
                 config: {
-                    climate:state.config.climate,
-                    speed:state.config.speed,
-                    temperature:state.config.temperature,
-                    wheels:action.value
+                    climate: state.config.climate,
+                    speed: state.config.speed,
+                    temperature: state.config.temperature,
+                    wheels: action.value
                 }
             };
             return updateStats(state, newState);
