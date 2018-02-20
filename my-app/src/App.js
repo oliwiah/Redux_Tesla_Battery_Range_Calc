@@ -5,8 +5,8 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import TeslaCarContainer from './containers/TeslaCarContainer';
 import TeslaStatsContainer from './containers/TeslaStatsContainer';
-import TeslaSpeedCounterContainer from './containers/TeslaSpeedCounterContainer';
-import TeslaTempCounterContainer from './containers/TeslaTempCounterContainer';
+import { TeslaSpeedCounterContainer, TeslaSpeedCounterContainer2 } from './containers/TeslaSpeedCounterContainer';
+import { TeslaTempCounterContainer, TeslaTempCounterContainer3 } from './containers/TeslaTempCounterContainer';
 import TeslaClimateContainer from './containers/TeslaClimateContainer';
 import TeslaWheelsContainer from './containers/TeslaWheelsContainer';
 import TeslaNotice from './components/TeslaNotice/TeslaNotice';
@@ -28,12 +28,20 @@ class App extends Component {
                     <TeslaCarContainer />
                     <TeslaStatsContainer />
                     <div className="tesla-controls cf">
-                        <TeslaSpeedCounterContainer />
-                        <div className="tesla-climate-container cf">
-                            <TeslaTempCounterContainer />
-                            <TeslaClimateContainer />
+                        <div className="tesla-center-div-main">
+                            <div className="tesla-center-div-in">
+                                <TeslaSpeedCounterContainer />
+                                <TeslaSpeedCounterContainer2 />
+                                <TeslaClimateContainer />
+                                <TeslaTempCounterContainer />
+                                <TeslaTempCounterContainer3 />
+                            </div>
                         </div>
-                        <TeslaWheelsContainer />
+                    </div>
+                    <div className="tesla-controls cf">
+                        <div className="tesla-center-div-main">
+                            <TeslaWheelsContainer />
+                        </div>
                     </div>
                     <TeslaNotice />
                 </form>

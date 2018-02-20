@@ -22,5 +22,9 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 const TeslaSpeedCounterContainer = connect(mapStateToProps, mapDispatchToProps)(TeslaCounter);
+const TeslaSpeedCounterContainer2 = connect(mapStateToProps, mapDispatchToProps)(TeslaCounter2);
 
-export default TeslaSpeedCounterContainer;
+export {
+    TeslaSpeedCounterContainer,
+    TeslaSpeedCounterContainer2
+}

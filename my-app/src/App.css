@@ -1,5 +1,5 @@
 .wrapper {
-  margin: 100px 0 150px;
+  margin: 10px 0 0;
 }
 
 .tesla-battery {
@@ -34,4 +34,10 @@
   display: block;
   width: 100%;
   margin-bottom: 10px;
+}
+
+.tesla-center-div-main {
+  float: left;
+  position: relative;
+  left: 50%;
 }

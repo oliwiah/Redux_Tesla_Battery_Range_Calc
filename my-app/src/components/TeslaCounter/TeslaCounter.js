@@ -46,7 +46,7 @@ const TeslaCounter2 = ({ initValues, currentValue, increment, decrement }) => (
         <div className="tesla-counter__container cf">
             <div className="tesla-counter__item">
                 <p className="tesla-counter__number">
-                    { currentValue }
+                    { (currentValue * 1.609).toFixed(0) }
                     <span id="km"> km/h </span>
                 </p>
                 <div className="tesla-counter__controls">
@@ -54,14 +54,14 @@ const TeslaCounter2 = ({ initValues, currentValue, increment, decrement }) => (
                         onClick={(e) => {
                             e.preventDefault();
                             increment(currentValue)}}
-                        disabled={currentValue >= 113}
+                        disabled={ ((currentValue * 1.609).toFixed(0)) >= 113}
                     >
                     </button>
                     <button
                         onClick={(e) => {
                             e.preventDefault();
                             decrement(currentValue)}}
-                        disabled={currentValue <= 72}
+                        disabled={ ((currentValue * 1.609).toFixed(0)) <= 72}
                     >
                     </button>
                 </div>
@@ -83,7 +83,7 @@ const TeslaCounter3 = ({ initValues, currentValue, increment, decrement }) => (
         <div className="tesla-counter__container cf">
             <div className="tesla-counter__item">
                 <p className="tesla-counter__number">
-                    { currentValue }
+                    { (currentValue * 1.8) + 32 }
                     <span id="km"> f </span>
                 </p>
                 <div className="tesla-counter__controls">
@@ -91,14 +91,14 @@ const TeslaCounter3 = ({ initValues, currentValue, increment, decrement }) => (
                         onClick={(e) => {
                             e.preventDefault();
                             increment(currentValue)}}
-                        disabled={currentValue >= 104}
+                        disabled={ ((currentValue * 1.8) + 32) >= 104}
                     >
                     </button>
                     <button
                         onClick={(e) => {
                             e.preventDefault();
                             decrement(currentValue)}}
-                        disabled={currentValue <= 14}
+                        disabled={ ((currentValue * 1.8) + 32) <= 14}
                     >
                     </button>
                 </div>
