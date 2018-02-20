@@ -1,4 +1,4 @@
-import {TeslaCounter, TeslaCounter3} from '../components/TeslaCounter/TeslaCounter';
+import {TeslaCounter3, TeslaCounter4} from '../components/TeslaCounter/TeslaCounter';
 import { connect } from 'react-redux';
 import { temperatureUp, temperatureDown } from '../actions'
 import { counterDefaultVal } from '../constants/counterDefaultVal';
@@ -21,10 +21,10 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-const TeslaTempCounterContainer = connect(mapStateToProps, mapDispatchToProps)(TeslaCounter);
 const TeslaTempCounterContainer3 = connect(mapStateToProps, mapDispatchToProps)(TeslaCounter3);
+const TeslaTempCounterContainer4 = connect(mapStateToProps, mapDispatchToProps)(TeslaCounter4);
 
 export {
-    TeslaTempCounterContainer,
     TeslaTempCounterContainer3,
+    TeslaTempCounterContainer4,
 };
