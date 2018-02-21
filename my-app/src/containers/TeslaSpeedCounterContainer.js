@@ -1,4 +1,4 @@
-import { TeslaCounter, TeslaCounter2, TeslaCounter3 } from '../components/TeslaCounter/TeslaCounter';
+import { TeslaCounter, TeslaCounter2 } from '../components/TeslaCounter/TeslaCounter';
 import { connect } from 'react-redux';
 import { speedUp, speedDown } from '../actions'
 import { counterDefaultVal } from '../constants/counterDefaultVal';

@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import './TeslaWheels.css';
 
 const LabelLists = (props) => {
+    // console.log("djhaksjhakjsdh",props.wheels)
     const value = props.wheels.value;
-    const changeHandler = props.wheels.handleChangeWheels;
+    const changeHandler = props.wheels.changeHandler;
     const sizes = [19, 21];
     const LabelItems = sizes.map(size => (
             <label key={size} className={`tesla-wheels__item tesla-wheels__item--${size} ${value === size ? 'tesla-wheels__item--active' : '' }`}>
@@ -21,7 +22,7 @@ const LabelLists = (props) => {
         )
     );
     return (
-        <div>
+        <div>`
             {LabelItems}
         </div>
     );
