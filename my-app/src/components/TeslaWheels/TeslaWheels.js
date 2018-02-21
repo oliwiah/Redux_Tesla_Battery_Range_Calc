@@ -26,7 +26,6 @@ const LabelLists = (props) => {
         </div>
     );
 }
-
 const TeslaWheels = (props) => (
     <div className="tesla-wheels__component">
         <p className="tesla-wheels__title">Wheels</p>
