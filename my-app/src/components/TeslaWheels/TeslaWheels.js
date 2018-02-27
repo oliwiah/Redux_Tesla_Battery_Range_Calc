@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import './TeslaWheels.css';
 
 const LabelLists = (props) => {
-    // console.log("djhaksjhakjsdh",props.wheels)
     const value = props.wheels.value;
     const changeHandler = props.wheels.changeHandler;
     const sizes = [19, 21];
