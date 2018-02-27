@@ -10,6 +10,7 @@ But I wanted to see how I can transform my app into an application that manages 
 ## Technologies used
 
 * ReactJS
+* Redux
 * JavaScript (ES6 standard)
 * CSS
 * Bootstrap
