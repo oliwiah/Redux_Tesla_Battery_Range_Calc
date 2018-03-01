@@ -16,6 +16,10 @@ But I wanted to see how I can transform my app into an application that manages 
 * Bootstrap
 * JSON
 
+## Demo
+
+![Demo TeslaCalc alpha](https://j.gifs.com/rRp6Nk.gif)
+
 ## Functionality
 
 With [this app](http://redux-tesla-battery-range.surge.sh/) you can check a battery range in **Tesla Car Model 3** according to a few variables:
