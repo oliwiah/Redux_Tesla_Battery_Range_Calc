@@ -15,6 +15,7 @@ But I wanted to see how I can transform my app into an application that manages 
 * CSS
 * Bootstrap
 * JSON
+* Surge (for deploying the app)
 
 ## Demo
 
@@ -41,9 +42,5 @@ With [this app](http://redux-tesla-battery-range.surge.sh/) you can check a batt
 ## Warning
 
 Please make sure you refreshed the browser to check the loading animation I created :blush:
-
-## Comments
-
-I plan to use Flex instead of floats in this app to make it responsive.
 
 [PREVIEW MY APP](http://redux-tesla-battery-range.surge.sh/)
